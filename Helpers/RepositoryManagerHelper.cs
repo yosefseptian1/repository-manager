@@ -14,7 +14,7 @@ public class RepositoryManagerHelper
         this._context = context;
     }
 
-    public async void Register(string itemName, string itemContent, short repoType)
+    public async Task Register(string itemName, string itemContent, short repoType)
     {
         if (itemName == null)
         {

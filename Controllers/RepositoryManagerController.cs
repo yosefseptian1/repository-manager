@@ -27,7 +27,7 @@ namespace backend_cis_dmc.Controllers
         [HttpPost("RegisterRepository")]
         public async Task<IActionResult> RegisterRepository(string itemName, string itemContent, short repoType)
         {
-            this._repositoryManagerHelper.Register(itemName, itemContent, repoType);
+            await this._repositoryManagerHelper.Register(itemName, itemContent, repoType);
             return Ok(new
             {
                 responseResult = true,
